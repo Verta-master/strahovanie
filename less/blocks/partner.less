@@ -1,0 +1,29 @@
+.partner {
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.partner__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partner__item {
+  width: 258px;
+  max-width: 100%;
+  text-align: center;
+  border-right: 1px solid rgba(0,0,0,0.1);
+  
+  &:first-child {
+    width: 195px;
+    text-align: left;
+  }
+  &:last-child {
+    width: 195px;
+    text-align: right;
+    border-right: 0;
+  }
+}
