@@ -1,0 +1,85 @@
+.footer {
+  color: #fff;
+  background-color: #3C3B48;
+  
+  .logo {
+    margin-bottom: 20px;
+  }
+  
+  .phone {
+    margin-bottom: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+    font-size: 18px;
+    .transition();
+    
+    &:hover,
+    &:active {
+      color: @green;
+      .transition();
+    }
+  }
+  
+  .mail {
+    color: rgba(255,255,255,0.7);
+    
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer__bottom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  border-top: 1px solid rgba(255,255,255,0.2);
+  
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.footer__nav {
+  .reset();
+  list-style: none;
+}
+
+.footer__item {
+  margin-bottom: 5px;
+  color: rgba(255,255,255,0.7);
+  font-size: 13px;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.footer__title {
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 35px;
+  font-weight: 700;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 27px;
+    height: 2px;
+    background-color: #15CE65;
+  }
+}

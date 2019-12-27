@@ -1,0 +1,32 @@
+.social {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.social__link {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.2);
+  .transition();
+    
+  &:hover,
+  &:active {
+    color: @green;
+    .transition();
+  }
+}
