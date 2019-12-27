@@ -878,3 +878,64 @@ h4,
   font-size: 18px;
   color: #24282C;
 }
+.number {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  color: #fff;
+  background-color: #E6E6E6;
+}
+.number__wrap {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-image: linear-gradient(96.29deg, #15CE65 0%, #009EE5 100%);
+}
+.number__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.number__item {
+  position: relative;
+  padding-left: 48px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.number__item p {
+  margin: 0;
+}
+.number__item b {
+  display: block;
+  font-family: "Avenir Next Cyr", "Arial", sans-serif;
+  font-weight: 750;
+  font-size: 24px;
+  line-height: 28px;
+}
+.number__item::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 34px;
+  height: 37px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.number__item:first-child::before {
+  width: 31px;
+  background-image: url(../img/icons/benefits-1.svg);
+}
+.number__item:nth-child(2)::before {
+  background-image: url(../img/icons/benefits-2.svg);
+}
+.number__item:nth-child(3)::before {
+  background-image: url(../img/icons/benefits-3.svg);
+}
