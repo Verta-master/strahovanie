@@ -1,0 +1,203 @@
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+  }
+  .header__menu {
+    display: none;
+  }
+  .promo__info {
+    padding-left: 0;
+    width: 55%;
+  }
+  .number__list {
+    justify-content: space-around;
+  }
+  .number__item {
+    margin: 0;
+  }
+  .about__info {
+    padding-right: 0;
+  }
+  .blog__list {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1022px) {
+  .menu__list {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    background-color: @green;
+    border-top: 1px solid rgba(255,255,255,0.5);
+  }
+  .menu__btn {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-image: url(../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+  }
+  .menu {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    &--opened .menu__btn {
+      background-image: url(../img/icons/cross.svg);
+      background-size: 25px 25px;
+    }
+  }
+  .menu__sublist {
+    display: block;
+    position: static;
+  }
+  .blog__list,
+  .partner__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .partner__item {
+    border-right: 0;
+    width: auto;
+    padding: 0 10px;
+    
+    &:last-child,
+    &:first-child {
+      width: auto;
+      text-align: center;
+    }
+  }
+  .catalog__item {
+    width: 50%;
+  }
+  .benefits__item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .blog__item {
+    margin-right: 0;
+  }
+  .footer__top {
+    flex-wrap: wrap;
+  }
+  .footer__block {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .footer__block--logo {
+    order: 1;
+    
+    .footer__nav {
+      display: block;
+    }
+  }
+  .footer__block--contacts {
+    order: 2;
+  }
+  .footer__block--menu1 {
+    order: 3;
+  }
+  .footer__block--menu2 {
+    order: 4;
+  }
+  .footer__block--menu3 {
+    order: 5;
+  }
+  .footer__block--menu4 {
+    order: 6;
+  }
+  .footer__title {
+    background-image: url(../img/icons/down.svg);
+    background-repeat: no-repeat;
+    background-size: 7px 7px;
+    background-position: right 50px center;
+  }
+  .footer__nav {
+    display: none;
+  }
+}
+
+@media (max-width: 766px) {
+  .header__contacts,
+  .about__wrap,
+  .title {
+    display: block;
+  }
+  .title__info {
+    margin-top: 20px;
+  }
+  .promo__info,
+  .about__img,
+  .about__info {
+    width: 100%;
+  }
+  .about__info {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .number__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefits__list {
+    flex-wrap: wrap;
+  }
+  .number__item {
+    width: 250px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .header__contacts .phone {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .header__call {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__wrap {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+    
+    .logo {
+      margin-bottom: 10px;
+    }
+  }
+  .search {
+    width: auto;
+    max-width: 100%;
+  }
+  .search__input {
+    width: 200px;
+  }
+  h1,
+  .title-1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .promo__img {
+    position: static;
+    width: 100%;
+  }
+  .promo {
+    padding-bottom: 0;
+  }
+  .title-2, h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  .footer__block,
+  .catalog__item {
+    width: 100%;
+  }
+}
