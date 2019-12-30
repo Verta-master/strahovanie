@@ -76,8 +76,40 @@ strong{color:#000000}
     }
   }
   .menu__sublist {
-    display: block;
+    display: none;
     position: static;
+  }
+  .menu__item {
+    &:hover,
+    &:active {
+      color: #FFFFFF;
+      background-color: #15CE65;
+      
+      .menu__sublist {
+        display: none;
+      }
+    }
+  }
+  .menu__link i {
+    display: none;
+  }
+  .menu__drop {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 55px;
+    height: 55px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 55px;
+    .transition();
+    
+    &--up {
+      transform: rotate(-180deg);
+      .transition();
+    }
   }
   .blog__list,
   .partner__list {

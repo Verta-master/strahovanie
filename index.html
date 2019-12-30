@@ -6,6 +6,7 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Онлайн страхование</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -24,7 +25,7 @@
       <div class="header__contacts">
         <a href="tel:+79521703323" class="phone">8 952 170-33-23</a>
         <a href="tel:+73842760916" class="phone">8 (3842) 760-916</a>
-        <a href="#" class="btn header__call"><i class="fa fa-phone-alt"></i>Консультация</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="btn header__call"><i class="fa fa-phone-alt"></i>Консультация</a>
       </div>
     </div>
   </header>
@@ -34,6 +35,7 @@
       <ul class="menu__list">
         <li class="menu__item">
           <a href="#" class="menu__link">Авто<i class="fas fa-caret-down"></i></a>
+          <button type="button" class="menu__drop"><i class="fas fa-caret-down"></i></button>
           <ul class="menu__sublist">
             <li class="menu__subitem"><a href="#">ОСАГО</a></li>
             <li class="menu__subitem"><a href="#">ОСАГО PRO Страхование</a></li>
@@ -43,6 +45,7 @@
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Путешествия<i class="fas fa-caret-down"></i></a>
+          <button type="button" class="menu__drop"><i class="fas fa-caret-down"></i></button>
           <ul class="menu__sublist">
             <li class="menu__subitem"><a href="#">За границу</a></li>
             <li class="menu__subitem"><a href="#">По РФ</a></li>
@@ -51,6 +54,7 @@
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Жизнь и здоровье<i class="fas fa-caret-down"></i></a>
+          <button type="button" class="menu__drop"><i class="fas fa-caret-down"></i></button>
           <ul class="menu__sublist">
             <li class="menu__subitem"><a href="#">Несчастный случай</a></li>
             <li class="menu__subitem"><a href="#">Страхование спортсменов</a></li>
@@ -60,6 +64,7 @@
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Недвижимость<i class="fas fa-caret-down"></i></a>
+          <button type="button" class="menu__drop"><i class="fas fa-caret-down"></i></button>
           <ul class="menu__sublist">
             <li class="menu__subitem"><a href="#">Загородная недвижимость</a></li>
             <li class="menu__subitem"><a href="#">Квартира</a></li>
@@ -491,7 +496,31 @@
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="title-3">Заказать консультацию</p>
+    <form action="#" class="form">
+      <div class="form__block">
+        <label for="name" class="form__label">Ваше имя</label>
+        <input type="text" id="name" class="form__input">
+      </div>
+      <div class="form__block">
+        <label for="phone" class="form__label">Номер телефона</label>
+        <input type="tel" id="phone" class="form__input" placeholder="+7">
+      </div>
+      <div class="form__block">
+        <label for="email" class="form__label">E-mail</label>
+        <input type="email" id="email" class="form__input" placeholder="E-mail">
+      </div>
+      <input type="checkbox" id="checkbox" class="form__checkbox" checked>
+      <label for="checkbox" class="form__checkbox-label">Я не робот</label>
+      <button type="submit" class="btn form__btn">Отправить</button>
+      <p class="modal__comment">Ознакомлен с <a href="#">политикой конфиденциальности</a></p>
+    </form>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 </body>
 </html>
