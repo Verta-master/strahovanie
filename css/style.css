@@ -1703,6 +1703,7 @@ h4,
 }
 .form__field {
   width: 240px;
+  max-width: 100%;
   margin-right: 20px;
   margin-top: 20px;
 }
@@ -1960,6 +1961,7 @@ strong {
     margin-top: 40px;
     margin-bottom: 40px;
   }
+  .form__table .form__name,
   .sidebar,
   .wrapper__content {
     width: 100%;
@@ -1969,6 +1971,26 @@ strong {
   }
   .contacts {
     padding: 20px;
+  }
+  .form__wrap,
+  .form__table,
+  .form__table tbody,
+  .form__table td {
+    display: block;
+  }
+  .form__table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .form__btn {
+    margin-left: 0;
+    margin-top: 30px;
   }
 }
 @media (max-width: 480px) {
@@ -2010,6 +2032,9 @@ strong {
     font-size: 30px;
     line-height: 1.2;
   }
+  .form__btn,
+  .form__field,
+  .form__table td,
   .top__option,
   .footer__block,
   .catalog__item {
@@ -2035,5 +2060,21 @@ strong {
   }
   .top__wrap img {
     margin-bottom: 20px;
+  }
+  .form__tip {
+    left: 23px;
+    top: 20px;
+  }
+  .form__table .form__name {
+    padding-left: 55px;
+  }
+  .form__plus,
+  .form__remove,
+  .form__file {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form__btn {
+    margin-right: 0;
   }
 }
